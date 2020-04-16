@@ -15,7 +15,7 @@ namespace Normal.Realtime.Examples {
 
         private void DidConnectToRoom(Realtime realtime) {
             // Instantiate the CubePlayer for this client once we've successfully connected to the room
-            Realtime.Instantiate("CubePlayer",                 // Prefab name
+            Realtime.Instantiate("SpherePlayer",                 // Prefab name
                                 position: Vector3.up,          // Start 1 meter in the air
                                 rotation: Quaternion.identity, // No rotation
                            ownedByClient: true,                // Make sure the RealtimeView on this prefab is owned by this client
