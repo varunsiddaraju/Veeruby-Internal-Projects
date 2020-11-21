@@ -324,6 +324,7 @@ GameObject:
   - component: {fileID: 802121361}
   - component: {fileID: 802121360}
   - component: {fileID: 802121363}
+  - component: {fileID: 802121364}
   m_Layer: 0
   m_Name: Spike Platform
   m_TagString: Untagged
@@ -442,6 +443,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &802121364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802121359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1111db9121286649babca7725bf2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1142111313
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +467,7 @@ GameObject:
   - component: {fileID: 1142111314}
   - component: {fileID: 1142111317}
   - component: {fileID: 1142111316}
+  - component: {fileID: 1142111318}
   m_Layer: 0
   m_Name: Standard Platform
   m_TagString: Untagged
@@ -572,6 +586,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.64, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &1142111318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142111313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1111db9121286649babca7725bf2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165127885
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +611,7 @@ GameObject:
   - component: {fileID: 1165127888}
   - component: {fileID: 1165127887}
   - component: {fileID: 1165127886}
+  - component: {fileID: 1165127891}
   m_Layer: 0
   m_Name: Breakable Platform
   m_TagString: Untagged
@@ -722,6 +749,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1165127891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165127885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1111db9121286649babca7725bf2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1167823393
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +774,9 @@ GameObject:
   - component: {fileID: 1167823396}
   - component: {fileID: 1167823395}
   - component: {fileID: 1167823394}
+  - component: {fileID: 1167823399}
   m_Layer: 0
-  m_Name: Speed Platform Right
+  m_Name: Speed Platform Left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +889,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a294bae7a5d887c468959c0174322fcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.64, y: 0.45}
@@ -872,6 +912,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167823399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167823393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1111db9121286649babca7725bf2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927951625
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +937,7 @@ GameObject:
   - component: {fileID: 1927951626}
   - component: {fileID: 1927951630}
   - component: {fileID: 1927951629}
+  - component: {fileID: 1927951631}
   m_Layer: 0
   m_Name: Speed Platform Left
   m_TagString: Untagged
@@ -1022,3 +1075,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.64, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &1927951631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927951625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1111db9121286649babca7725bf2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
