@@ -7,6 +7,7 @@ public class BGScript : MonoBehaviour
 {
     public float scrollSpeed = 0.3f;
     private MeshRenderer mesh_Renderer;
+    private static string texture_name = "_MainTex";
 
     public void Awake()
     {
@@ -20,8 +21,8 @@ public class BGScript : MonoBehaviour
 
     private void Scroll()
     {
-        Vector2 offset = mesh_Renderer.sharedMaterial.GetTextureOffset("_MainTex");
+        Vector2 offset = mesh_Renderer.sharedMaterial.GetTextureOffset(texture_name);
         offset.y += Time.deltaTime * scrollSpeed;
-        mesh_Renderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
+        mesh_Renderer.sharedMaterial.SetTextureOffset(texture_name, offset);
     }
 }
