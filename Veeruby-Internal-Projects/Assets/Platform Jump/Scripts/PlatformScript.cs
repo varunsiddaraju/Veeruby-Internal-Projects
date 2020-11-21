@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,20 @@ public class PlatformScript : MonoBehaviour
     private Animator anim;
 
 
+    public void Update()
+    {
+        Move();
+    }
 
+    private void Move()
+    {
+        Vector2 temp = transform.position;
+        temp.y += move_Speed * Time.deltaTime;
+        transform.position = temp;
 
-
+        if(temp.y >= bound_Y)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
