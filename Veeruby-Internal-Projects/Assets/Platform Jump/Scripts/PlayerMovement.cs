@@ -15,22 +15,23 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    
+
+    public void MoveRight()
     {
-        Move();
+       
+            myBody.velocity = new Vector2(moveSpeed, myBody.velocity.y);
+        
     }
 
-    public void Move()
+    public void MoveLeft()
     {
-        if (Input.GetAxisRaw("Horizontal") > 0f)
-        {
-            myBody.velocity = new Vector2(moveSpeed, myBody.velocity.y);
-        }
-        if (Input.GetAxisRaw("Horizontal") < 0f)
-        {
+      
             myBody.velocity = new Vector2(-moveSpeed, myBody.velocity.y);
-        }
+        
     }
+
+
 
     public void PlatformMove(float x)
     {

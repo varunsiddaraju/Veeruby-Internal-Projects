@@ -33,7 +33,7 @@ public class PlatformScript : MonoBehaviour
 
     void BreakableDeactivate()
     {
-        Invoke("DeactivateGameObject", 3f);
+        Invoke("DeactivateGameObject", 1f);
         SoundManager.instance.BreakClip();
     }
 
