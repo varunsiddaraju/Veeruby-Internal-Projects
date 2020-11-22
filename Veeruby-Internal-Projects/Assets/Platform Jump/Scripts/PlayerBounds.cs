@@ -43,7 +43,20 @@ public class PlayerBounds : MonoBehaviour
 
         if (temp.y <= Y_BoundMin)
         {
-            Debug.Log("Out of bounds");
+            ManageGame.Instance.RestartGame();
+            SoundManager.instance.GameOverClip();
         }
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D target)
+    {
+        if (target.tag == "TopSpikes")
+        {
+            transform.position = new Vector2(1000f, 1000f);
+            ManageGame.Instance.RestartGame();
+            SoundManager.instance.GameOverClip();
+        }
+
     }
 }

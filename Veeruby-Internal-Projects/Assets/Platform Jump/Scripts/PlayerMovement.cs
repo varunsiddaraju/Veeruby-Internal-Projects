@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D myBody;
 
-    private float moveSpeed = 2f;
+    private float moveSpeed = 3f;
 
     void Awake()
     {
