@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CoarseRelocalization.unity
+    guid: 05f04150371623840b0650901cd33f7d
   m_configObjects: {}
